@@ -5,7 +5,6 @@ pathreader()
 
 with open("oldhash.json", 'r', encoding="utf-8") as f:
     data = json.load(f)
-    print(data)
     for key in data:
         data[key] = hash_folder(key)
 with open("oldhash.json", 'w', encoding="utf-8") as f:
